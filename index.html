@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>남하은</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <meta property="og:type" content="website"> 
+  <meta property="og:title" content="남하은 포트폴리오">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="웹개발">
+  <meta property="og:image:width" content="" />
+  <meta property="og:image:height" content="" />
+  <meta property="og:image" content="">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .box {
+      width: 1200px;
+      margin: 4rem auto;
+      padding: 4rem;
+    }
+    .card-box {
+      width: 520px;
+      height: 480px;
+    }
+    .modal-box {
+      width: 770px;
+      height: 570px;
+    }
+    .imabs {
+      position: absolute;
+    }
+    .imrel{
+      position: relative;
+    }
+    .size {
+      width: 1200px;
+    }
+    .margin {
+      margin: 4rem;      
+    }
+    .purple { 
+      background-color: hsl(261, 52%, 72%);
+    }
+    header {
+      height: 900px;
+      background-image: url('img/main.jpg');
+      background-size: cover;
+      filter: grayscale(60%);
+    }
+    .opacity {
+      background-color: rgba(255,255,255,0.6);
+      padding: 5px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+    <!-- 1. nav bar -->
+    <nav class="navbar navbar-light sticky-top" style="background-color: #d1c4e9">
+      <div class="container-fluid">
+        <div class="navbar-nav d-flex flex-row">
+          <a class="nav-link mx-4" style="color: #4a148c;" aria-current="page" href="#">About Me</a>
+          <a class="nav-link mx-4" style="color: #4a148c;" href="#">Portfolio</a>
+          <a class="nav-link mx-4" style="color: #4a148c;" href="#">Blog</a>
+          <a class="nav-link mx-4" style="color: #4a148c;" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- 2. 메인 -->
+    <header class="d-flex justify-content-center align-items-center">
+      <div class="display-3 opacity">웹개발자를 꿈꾸는 심리학도</div>
+    </header>
+    
+
+    <!-- 3. 내 소개 -->
+    <section class="box">
+      <h1 class="text-center fw-bold">About Me</h1>
+      <div class="d-flex justify-content-center">
+        <img src="img/profile.jpg" class="rounded-circle margin" width="360px"  alt="">
+        <div class="d-flex flex-column justify-content-center gap-4 mx-3 mt-3">
+          <div class="h5 mb-3">HTML</div>
+          <div class="h5 mb-3">CSS</div>
+          <div class="h5 mb-3">Python</div>
+          <div class="h5 mb-3">Django</div>
+          <div class="h5 mb-3">Adobe</div>
+        </div>
+        <div class="d-flex flex-column justify-content-center gap-5 " style="width:450px;">
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-2">
+      <h2>남하은</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae amet incidunt libero, doloremque ipsum, suscipit fugit temporibus magnam alias omnis dolorem, voluptatibus nulla. Dolore veniam omnis aliquid sed reprehenderit labore!</p>
+      </div>
+    </section>
+    
+    
+
+
+    <!-- 활동 및 project -->
+    <section class="box container-fluid">
+      <h1 class="text-center fw-bold margin">Portfolio</h1>
+      <div class="row">
+        <div class="col-6">
+          <img src="img/portfolio1.png" class="card-img-top card-box" width alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <span class="card-text h5">서비스 기획</span>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn purple text-white"  data-bs-toggle="modal" data-bs-target="#Modal1">
+              자세히
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="img/portfolio2.png" class="card-img-top card-box" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <span class="card-text h5">서비스 기획</span>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn purple text-white"  data-bs-toggle="modal" data-bs-target="#Modal2">
+              자세히
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="img/portfolio1.png" class="card-img-top card-box" alt="...">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="img/portfolio1.png" class="card-img-top card-box" alt="...">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+      <article>
+      </article>
+    </section>
+
+
+    <!-- BLOG -->
+    <section class="box container-fluid">
+      <h1 class="text-center fw-bold margin">Blog</h1>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/portfolio1.png" class="card-img-top" width alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <span class="card-text h5 fw-bold text-secondary">서비스 기획</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="img/portfolio2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="col-4">
+          <img src="img/ortfolio1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>   
+    </section>
+
+
+
+    <!-- Contact -->
+    <section class="box container-fluid">
+      <h1 class="text-center fw-bold margin">Contact</h1>
+      
+    </section>
+   
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- carousel -->
+          <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner modal-box">
+              <div class="carousel-item active">
+                <img src="img/portfolio1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portfolio1-1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portfolio1.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="position-absolute bottom-0 start-0 bg-secondary" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="position-absolute bottom-0 end-0 bg-secondary" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="p-4">
+            <h5>저축은행 예금상품 추천서비스</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam consectetur nisi molestias dicta est dolorum perspiciatis ad, architecto, voluptatibus fugit velit veniam dolores itaque tempora esse expedita odio consequuntur.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- carousel -->
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner modal-box">
+              <div class="carousel-item active">
+                <img src="img/portfolio2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portfolio2-1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portfolio2-2.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="position-absolute bottom-0 start-0 bg-secondary" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="position-absolute bottom-0 end-0 bg-secondary" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="p-4">
+            <h5>저축은행 예금상품 추천서비스</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit laboriosam consectetur nisi molestias dicta est dolorum perspiciatis ad, architecto, voluptatibus fugit velit veniam dolores itaque tempora esse expedita odio consequuntur.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- <script src="https://kit.fontawesome.com/8dd1eed212.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
