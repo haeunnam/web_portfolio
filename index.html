@@ -14,6 +14,8 @@
   <meta property="og:image:width" content="" />
   <meta property="og:image:height" content="" />
   <meta property="og:image" content="">
+
+  <meta name="google-site-verification" content="u3TMJPAmmafP6h9mdYBo2a0EENzfXGlmoL1815f7tDM" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">  
   
@@ -22,7 +24,7 @@
       box-sizing: border-box;
     }
     .box {
-      width: 1200px;
+      max-width: 1200px;
       margin: 4rem auto;
       padding: 4rem;
     }
@@ -84,11 +86,11 @@
     
 
     <!-- 3. 내 소개 -->
-    <section class="box">
+    <section class="box container-fluid">
       <h1 class="text-center fw-bold">About Me</h1>
       <div class="d-flex justify-content-center">
         <img src="img/profile.jpg" class="rounded-circle margin" width="360px"  alt="">
-        <div class="d-flex flex-column justify-content-center gap-4 mx-3 mt-3">
+        <div class="d-flex flex-column justify-content-center gap-4">
           <div class="h5 mb-3">HTML</div>
           <div class="h5 mb-3">CSS</div>
           <div class="h5 mb-3">Python</div>
@@ -127,35 +129,15 @@
       <h1 class="text-center fw-bold margin">Portfolio</h1>
       <div class="row">
         <div class="col-6">
-          <img src="img/portfolio1.png" class="card-img-top card-box" width alt="...">
+          <img src="img/portfolio1.png" class="card-img-top card-box" width alt="..." data-bs-toggle="modal" data-bs-target="#Modal1" >
           <div class="card-body d-flex justify-content-between">
-            <span class="card-text h5">서비스 기획</span>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn purple text-white"  data-bs-toggle="modal" data-bs-target="#Modal1">
-              자세히
-            </button>
+            <span class="card-text h5">예금 추천 서비스 기획</span>
           </div>
         </div>
         <div class="col-6">
-          <img src="img/portfolio2.png" class="card-img-top card-box" alt="...">
+          <img src="img/portfolio2.png" class="card-img-top card-box" alt="..." data-bs-toggle="modal" data-bs-target="#Modal2">
           <div class="card-body d-flex justify-content-between">
-            <span class="card-text h5">서비스 기획</span>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn purple text-white"  data-bs-toggle="modal" data-bs-target="#Modal2">
-              자세히
-            </button>
-          </div>
-        </div>
-        <div class="col-6">
-          <img src="img/portfolio1.png" class="card-img-top card-box" alt="...">
-          <div class="card-body">
-            <p class="card-text"></p>
-          </div>
-        </div>
-        <div class="col-6">
-          <img src="img/portfolio1.png" class="card-img-top card-box" alt="...">
-          <div class="card-body">
-            <p class="card-text"></p>
+            <span class="card-text h5">안전한 밤길 경로 제공 서비스 기획</span>
           </div>
         </div>
       </div>
@@ -169,7 +151,7 @@
       <h1 class="text-center fw-bold margin">Blog</h1>
       <div class="row">
         <div class="col-4">
-          <img src="img/portfolio1.png" class="card-img-top" width alt="...">
+          <a href="https://codinghani.tistory.com/5?category=960304"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FduQPxu%2FbtqVJR8DkaI%2FBudK84JX7nYcZ6VJV35Uck%2Fimg.png" class="card-img-top " width alt="..." a></a>
           <div class="card-body d-flex justify-content-between">
             <span class="card-text h5 fw-bold text-secondary">서비스 기획</span>
           </div>
